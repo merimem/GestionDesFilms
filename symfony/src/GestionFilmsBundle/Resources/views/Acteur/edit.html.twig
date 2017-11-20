@@ -1,0 +1,55 @@
+{% extends 'GestionFilmsBundle:Acteur:afficheActeurs.html.twig' %}
+{% block body %}
+<h1> Ajout d'un acteur</h1>
+    <div class="col-md-3">
+        <p class="lead">Listes Des Categories</p>
+        <div class="list-group">
+            <a href="Drama" class="list-group-item">Thriller</a>
+            <a href="Romance" class="list-group-item">Romance 2</a>
+            <a href="Horreur" class="list-group-item">Horreur </a>
+            <a href="Horreur" class="list-group-item">Comédie</a>
+
+        </div>
+    </div>
+<a href ="{{ path('acteur_affiche') }}">Afficher les acteurs</a>
+<form method="post">
+<table>
+    <caption>{{ msg }}</caption>
+    <thead>
+    <tr>
+        <td>{{ form_label(form.nom) }} </td>
+        <td>
+            {{ form_widget(form.nom) }}
+            {{ form_errors(form.nom) }}
+        </td>
+    </tr>
+
+    <tr>
+        <td>{{ form_label(form.prenom) }} </td>
+        <td>
+            {{ form_widget(form.prenom) }}
+            {{ form_errors(form.prenom) }}
+        </td>
+    </tr>
+
+    <tr>
+        <td>{{ form_label(form.datenaissance) }} </td>
+        <td>
+            {{ form_widget(form.datenaissance) }}
+            {{ form_errors(form.datenaissance) }}
+        </td>
+    </tr>
+
+    <tr>
+        <td>{{ form_label(form.sexe) }} </td>
+        <td>
+            {{ form_widget(form.sexe) }}
+            {{ form_errors(form.sexe) }}
+        </td>
+    </tr>
+ </table>
+
+{{ form_rest(form) }}
+<input type="submit" value="Ajouter un acteur">
+</form>
+{% endblock %}

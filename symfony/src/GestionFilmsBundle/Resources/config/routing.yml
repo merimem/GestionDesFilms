@@ -1,0 +1,52 @@
+gestion_films:
+    path:     /
+    defaults: { _controller: GestionFilmsBundle:Default:accueil }
+categorie_ajout:
+    path:     /categorie/ajout
+    defaults: { _controller: GestionFilmsBundle:Categorie:ajout }
+categorie_affiche:
+    path:     /categorie
+    defaults: { _controller: GestionFilmsBundle:Categorie:affiche }
+acteur_ajout:
+    path:     /acteur/ajout
+    defaults: { _controller: GestionFilmsBundle:Acteur:ajout }
+acteur_affiche:
+    path:     /acteur
+    defaults: { _controller: GestionFilmsBundle:Acteur:affiche }
+acteur_modif:
+    path:     /acteur/modif/{id}
+    defaults: { _controller: GestionFilmsBundle:Acteur:modif }
+acteur_supp:
+    path:     /acteur/supp/{id}
+    defaults: { _controller: GestionFilmsBundle:Acteur:supp }
+film_ajout:
+    path:     /film/ajout
+    defaults: { _controller: GestionFilmsBundle:Film:ajout }
+film_affiche:
+    path:     /film
+    defaults: { _controller: GestionFilmsBundle:Film:affiche }
+filmOne_affiche:
+    path:     /film/{id}
+    defaults: { _controller: GestionFilmsBundle:Film:show }
+film_modif:
+    path:     /film/modif/{id}
+    defaults: { _controller: GestionFilmsBundle:Film:create }
+film_supp:
+    path:     /film/supp/{id}
+    defaults: { _controller: GestionFilmsBundle:Film:supp }
+film_search:
+    path:     /film/search/{titre}
+    defaults: { _controller: GestionFilmsBundle:Film:search }
+film_thriller:
+    path:     /film/thriller/
+    defaults: { _controller: GestionFilmsBundle:Film:thriller }
+entretien:
+    path:     /entretien
+    defaults: { _controller: GestionFilmsBundle:Default:entretien }
+seriousgame:
+    path:     /seriousgame
+    defaults: { _controller: GestionFilmsBundle:Default:seriousgame }
+reseau:
+    path:     /reseau
+    defaults: { _controller: GestionFilmsBundle:Default:reseau }
+

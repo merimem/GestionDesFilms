@@ -1,0 +1,32 @@
+{% extends 'GestionFilmsBundle::index.html.twig' %}
+{% block body %}
+<h1> Ajout d'un film</h1>
+<a href ="{{ path('film_affiche') }}">Afficher les acteurs</a>
+
+<form method="post">
+<table>
+    <caption>{{ msg }}</caption>
+    <thead>
+    <tr>
+        <td>{{ form_label(form.titre) }} </td>
+        <td>
+            {{ form_widget(form.titre) }}
+            {{ form_errors(form.titre) }}
+        </td>
+    </tr>
+
+    <tr>
+        <td>{{ form_label(form.description) }} </td>
+        <td>
+            {{ form_widget(form.description) }}
+            {{ form_errors(form.description) }}
+        </td>
+    </tr>
+
+
+ </table>
+
+{{ form_rest(form) }}
+<input type="submit" value="Ajouter un film">
+</form>
+{% endblock %}

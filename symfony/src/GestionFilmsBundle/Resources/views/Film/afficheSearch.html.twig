@@ -1,0 +1,46 @@
+{% extends 'GestionFilmsBundle::index.html.twig' %}
+{% block body %}
+    <h1 align="center">Le film existe déja</h1>
+
+    <div class="row">
+
+
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+
+                    <a href="{{ path('filmOne_affiche', {'id':film.id}) }}">
+
+                            <img src="{{ asset('bundles/gestionfilms/images/6.jpg')}}" alt="">
+
+                    </a>
+                    <div class="caption">
+                        <h4 class="pull-right">{{ film.categorie.nom }}</h4>
+                        <h4><a href="#">{{ film.titre }}</a>
+                        </h4>
+                        <p>{{ film.description }}.</p>
+                        <a href="{{ path('film_modif',{'id':film.id}) }}">Modifier</a>
+                        <a href="{{ path('film_supp',{'id':film.id})  }}">Supprimer</a>
+
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+
+
+    <a href="{{ path('film_ajout') }}">Ajouter un nouveau film</a>
+{% endblock %}

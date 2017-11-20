@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gestion des Films">
+    <meta name="author" content="Copyright By Meriem Memmiche">
+
+    <title>IHM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset('bundles/gestionfilms/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ asset('bundles/gestionfilms/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="{{ asset('bundles/gestionfilms/css/agency.min.css') }}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">IHM</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services" > <FONT COLOR="#FFFFFFF">Catégories</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio"  ><FONT COLOR="#FFFFFFF">Les critères BASTIEN ET SCAPIN
+
+                        </FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#heuristique"  ><FONT COLOR="#FFFFFFF">Les heuristiques de Nielson
+
+                        </FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about" ><FONT COLOR="#FFFFFFF">Comparaison des critères</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team" ><FONT COLOR="#FFFFFFF">Les chercheurs</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact" ><FONT COLOR="#FFFFFFF">Contact</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#"><FONT COLOR="#FFFFFFF">Help</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#"><FONT COLOR="#FFFFFFF">
+                            <form action="" method="post">
+                                <input type="text"  placeholder="Chercher..." name="motcle">
+                            </form></FONT></a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href=" path('film_affiche') }}" ><FONT COLOR="#FFFFFFF">Afficher tous les films</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href=" path('acteur_affiche') }}" ><FONT COLOR="#FFFFFFF">Afficher tous les acteurs</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href=" path('entretien') }}" ><FONT COLOR="#FFFFFFF">Entretien</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href=" path('seriousgame') }}" ><FONT COLOR="#FFFFFFF">Serious Game</FONT></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{ path('reseau') }}" ><FONT COLOR="#FFFFFFF">Réseau</FONT></a>
+                </li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapsheader-bge -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Outils d'aide à </div>
+            <div class="intro-heading">Evaluation d'une page</div>
+            <a href="#services" class="page-scroll btn btn-xl">Commencer</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Bienvenue à la base des criteres et heuristiques</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+
+
+
+                <h4 style="color: #0000F0" class="service-heading">Pour consulter les critéres par catégorie :</h4>
+<form>
+            <h3>Plateforme</h3>
+            <input type="radio" name="gender" value="pc"> PC<br>
+            <input type="radio" name="gender" value="tablette"> Tablette<br>
+            <input type="radio" name="gender" value="smartphone"> Smartphone<br>
+</form>
+        <form>
+            <h3>Domaine de l'application</h3>
+            <input type="radio" name="gender" value="jeux"> Jeux<br>
+            <input type="radio" name="gender" value="elearning"> E-learning<br>
+            <input type="radio" name="gender" value="bureautique"> Breautique<br>
+        </form>
+        <form>
+            <h3>La population cible</h3>
+            <input type="radio" name="gender" value="jeux"> Enfants<br>
+            <input type="radio" name="gender" value="elearning"> Malvoyants<br>
+            <input type="radio" name="gender" value="bureautique"> Personnes agées<br>
+            <input type="radio" name="gender" value="ts"> Tous<br>
+        </form>
+        <a href="{{ path('film_affiche') }}" class="page-scroll btn btn-xl">OK</a>
+
+
+
+
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Consulter la liste des critères BASTIEN ET SCAPIN
+
+                </h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/1.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>GUIDAGE </h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/2.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>CHARGE DE TRAVAIL</h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/33.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>CONTROLE DES UTILISATEURS SUR LEURS ACTIONS</h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/4.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>ADAPTABILITE DE L’APPLICATION AUX BESOINS DES UTILISATEURS</h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/5.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>GESTION DES ERREURS</h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/6.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>HOMOGENEITE ET COHERENCE DES CODES</h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ asset('bundles/gestionfilms/images/portfolio/7.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>SIGNIFIANCE DES CODES ET DENOMINATIONS </h4>
+                        <p class="text-muted">Cliquer pour consulter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<p><b>Télécharger tous les criteres de Bastien et Scapin</b></p>
+    <a href="{{ asset('bundles/gestionfilms/documents/BastienScapin.pdf')}}"
+       download="BastienScapin.pdf" class="page-scroll btn btn-xl">Télécharger</a>
+</section>
+
+
+
+<!-- Portfolio Grid Section -->
+<section id="heuristique" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Consulter les heuristiques de Nielson et leurs explications
+
+                </h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ asset('bundles/gestionfilms/images/portfolio/10.jpg')}}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>les 10 principes de Jacob Nielsen </h4>
+                    <p class="text-muted">Cliquer pour consulter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <p>    </p>
+    <p><b>Télécharger tous les heuristiques de Nielson</b></p>
+    <a href="{{ asset('bundles/gestionfilms/documents/HeuristiquesNielson.pdf')}}"
+       download="HeuristiquesNielson.pdf" class="page-scroll btn btn-xl">Télécharger</a>
+</section>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Comparaison des critères</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ asset('bundles/gestionfilms/images/about/livre.jpg')}}" alt="" style="margin-left:190px">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="margin-right:60px">Aide et documentation : différence de poids</h4>
+
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="margin-right:80px"> La première différence concerne l’importance donnée à l’aide et la documentation.
+                                    Nielsen a créé une catégorie pour ce sujet, au même titre que les autres.
+                                    Du côté des critères B&S, on se rend compte qu’il n’y a un qu’un sous-critère qui entre dans cette catégorie :
+                                    l’incitation (qui fait partie du guidage). Et encore, c’est assez caché. </p>
+                                <p><b>Ce critère englobe aussi tous les mécanismes ou moyens faisant connaître aux utilisateurs les alternatives, lorsque plusieurs actions sont possibles, selon les états ou contextes dans lesquels ils se trouvent.
+                                        L’incitation concerne également les informations permettant aux utilisateurs de savoir où ils en sont, d’identifier l’état ou le contexte dans lequel ils se trouvent, de même que les outils d’aide et leur accessibilité.</b></p>
+                                        <p>L’aide en tant que telle ne semble pas avoir autant d’importance dans les critères de Bastien et Scapin. Cependant, de nombreux dispositifs qu’on pourrait qualifier d’aide entrent dans leurs catégories. Ce n’est pas un oubli,
+                                            mais plus une pondération différente.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                                                    </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="margin-left:60px">La lisibilité : pas explicitement présente dans les heuristiques de Nielsen</h4>
+                                <!--<h4 class="subheading" style="margin-left:80px">acteur fétiche des frères Coen</h4>-->
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="margin-left:80px">Cette fois-ci, c’est un critère de B&S qu'on a du mal à retrouver dans les heuristiques de Nielsen: la lisibilité.</p>
+                                    <p>La justification de ce sous-critère est intéressante et apporte des exemples d’application.</p>
+                                    </p><b>Ainsi par exemple, les lettres sombres sur fond clair sont plus faciles à lire que l’inverse; le texte présenté en
+                                    lettres majuscules et minuscules est lu plus rapidement que le texte présenté seulement en lettres majuscules.</b></p>
+                                    <p>On rattache la lisibilité à deux heuristiques : Identifier plutôt que mémoriser dont la description semble coller
+                                        plus ou moins ; ainsi que l’heuristique Esthétique et minimalisme.
+                                    I semble qu’il faille tout de même quelque peu tordre les règles de Nielsen pour rattacher ce critère pourtant basique à une
+                                        catégorie. C’est certain que dans ce cas précis, les critères de Bastien et Scapin sont plus explicites,
+                                        en donnant de surcroit des exemples de recommandation.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ asset('bundles/gestionfilms/images/about/rh.jpg')}}" alt="" style="margin-left:190px">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="margin-right:60px">Brièveté (S&B) et efficacité (Nielsen)</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">La dernière différence marquante entre les deux listes concerne des critères qu’on rapproche facilement : la brièveté de Bastien et Scapin et l’efficacité de Nielsen.</p>
+                                <p>Voici une partie de la définition du critère de brièveté:</p>
+                                <p><b>Il s’agit ici de limiter autant que possible le travail de lecture, d’entrée et les étapes par lesquelles doivent passer les utilisateurs.</b></p>
+                                <p>Et l’heuristique de Nielsen:</p>
+                                <p><b>Flexibilité et efficacité : les accélérateurs permettent aux utilisateurs avancés d’aller plus vite et permettent de satisfaire les besoins d’utilisateurs novices et expérimentés.</b></p>
+                                <p>Ce qui est étonnant dans ce cas, c’est que l’explication que donne Nielsen est en fait très restrictive en comparaison du titre. Je pense qu’on peu à juste titre rapprocher les deux définitions.
+                                    En englobant dans cette heuristique toutes les améliorations qui permettent à l’utilisateur d’aller plus vite (sans distinction d’expérience utilisateur), on élargi le champ de cette règle qui devient plus explicite sur ce sujet.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="margin-left:60px">quel choix de critères ?</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" style="margin-left:80px"> Les critères ou heuristiques ne sont qu’un outil pour évaluer l’ergonomie d’une interface. Ils ne constituent qu’une grille d’analyse, souvent un point de départ qui est complété par des règles spécifiques à un éditeur.
+                                    D’un point de vue personnel, je trouve les heuristiques de Nielsen plus aisées à comprendre au premier abord. Cela s’explique par des noms plus explicites. Par exemple, je trouve facile de comprendre de quoi parle l’heuristique Flexibilité et efficacité. D’un autre côté, il n’est pas aisé de comprendre ce qui se cache derrière le critère Guidage sans lire l’explication des 3 sous-critères.
+                                    Les critères de Bastien et Scapin sont par contre plus explicites sur de nombreux points comme la lisibilité ou encore l’efficacité. Cela en fait un outil plus structuré, peut-être plus complet.
+                                    Ces différences me font penser que le principal reproche que je fais aux critères de Bastien et Scapin par rapport aux heuristiques de Nielsen est justement d’ordre ergonomique. Ce qui est un comble.
+                                    Pour aller au bout de l’analyse, je dirais qu’ils enfreignent principalement la règle Utiliser des métaphores et des expressions familières chez Nielsen ou Signifiance des codes et désignations dans leur propre liste.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Comparaison
+                                <br>Des
+                                <br>Crtieres</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Les chercheurs!</h2>
+                <h3 class="section-subheading text-muted">Découvrir les chercheurs</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="{{ asset('bundles/gestionfilms/images/team/BastienScapin.png')}}" class="img-responsive img-circle" alt="">
+                    <h4>Christian Bastien et Dominique Scapin</h4>
+                    <p class="text-muted"></p>
+                    <p></p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="{{ asset('bundles/gestionfilms/images/team/JakobNielsen.jpeg')}}" class="img-responsive img-circle" alt="">
+                    <h4>Jakob Nielsen</h4>
+                    <p class="text-muted"></p>
+                    <p></p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients Aside -->
+<aside class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+
+            </div>
+            <div class="col-md-3 col-sm-6">
+
+
+            </div>
+
+        </div>
+    </div>
+</aside>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact Us</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row" style="margin-left:40px">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright Meriem Memmiche & Loussaif Sarah</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                    <li><a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Portfolio Modals -->
+<!-- Use the modals below to showcase details about your portfolio projects! -->
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>GUIDAGE  </h2>
+                            <p class="item-intro text-muted"></p>
+
+
+                            <p style="color: #c7254e">1. GUIDAGE </p>
+                            <p>   CONSEILLER, ORIENTER, INFORMER ET CONDUIRE L’UTILISATEUR TOUT AU LONG DE SON PARCOURS</p>
+                            <p>
+                                <b>1.1. Incitation dans les actions à effectuer</b></p>
+                               <p> Accompagner l’utilisateur dans sa tâche, le renseigner sur le contexte dans lequel il se trouve, l’orienter, l’amener à effectuer des actions spécifiques.
+
+                                Quelques exemples :
+
+                                Indiquer à l’utilisateur les éléments cliquables (call to action incitatif)
+                                Titre de page claire et en adéquation avec le contenu
+                                Aide à la saisie dans un formulaire (jj.mm.aaaa) ..
+                                Un graphisme soigné et moderne
+                                Intégration d’éléments dynamiques pour capter le regard</p>
+
+
+                            <p> <b>1.2 Groupement/Distinction entre Items</b></p>
+                              <p>  Regrouper ce qui va ensemble pour favoriser une meilleure distinction et reconnaissance des éléments
+                                Quelques exemples :
+
+                                Les liens visités sont différenciés des liens non visités
+                                Distinction des rubriques de navigation par couleurs
+                                Les différentes zones de l’écran sont rapidement identifiable et distinctes (navigation principale, navigation secondaire, identification, contenu …)
+                                Les boutons avec actions différentes sont distincts  (valider, annuler)
+                            </p>
+                            <p> <b> 1.3 Feedback immédiat</b></p>
+                            <p> <b> 1.3 Feedback immédiat</b></p>
+                           <p>Tenir l’utilisateur informé de manière immédiate de ce qui se passe pour le rassurer dans son parcours
+
+                            Quelques exemple :
+
+                            Les actions en cours sont indiqués (barre de progression dans un téléchargement, loader dans le chargement d’une page …)
+                            Des tutoriaux/aides à la saisie pour les actions compliqués sont indiqués en temps réel
+                            Le moteur de recherche utilise l’auto-complétion
+                            Dans un formulaire, les champs sont directement vérifiés à la saisie
+                            Lors d’une inscription, la disponibilité (ou non) d’un nom d’utilisateur est vérifié en temps réel.
+                            Le nombre de caractère restant dans une description est indiqué au fur et à mesure
+                            Le téléchargement d’un document, paiement, envoie est confirmé.</p>
+                            <p> <b>  1.4 Lisibilité</b>
+                            <p>Faciliter la lecture et favoriser la compréhension de ce qui est affiché à l’écran.
+
+                            Quelques exemples :
+
+                            Hiérarchisation du contenu (titre, sous titre, chapeau, texte, date différent graphiquement)
+                            Taille de police suffisante
+                            Le contraste entre la couleur d’arrière plan et la police est assez fort : préférer les fonds clairs (gris pâle), le texte noir, éviter le rouge (sauf pour les messages d’erreurs)
+                            Utiliser une police sans empattement de type Verdana, Arial ou Helvetica pour les textes longs</p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>CHARGE DE TRAVAIL  </h2>
+                            <p class="item-intro text-muted"></p>
+
+
+                            <p style="color: #c7254e">2. CHARGE DE TRAVAIL</p>
+                             <p>   OPTIMISER LE NOMBRE D’ACTIONS DEMANDEES A L’UTILISATEUR</p>
+                            <p>
+                                <b>2.1. Brièveté (Concision & Actions Minimales)</b>
+                                Garantir la simplicité de l’interface et la pertinence des fonctionnalités tout en limitant le travail de lecture
+
+                                Quelques exemples :
+
+                                Limiter les étapes par lesquelles doivent passer les utilisateurs pour effectuer leur tâche,
+                                Pour de l’aide à la saisie, utiliser un format court pour en faciliter sa compréhension et sa lecture
+                                Pas d’éléments inutiles
+                                Des libellés clairs et concis dans les formulaires.
+                                Proposer des boutons de partages et d’impression sur les pages produits/services</p>
+
+
+                               <p> <b>2.2. Densité de l’information</b>
+                                Limiter la densité informationnelle de l’interface, en affichant uniquement les informations nécessaires.
+
+                                Quelques exemples :
+
+                                Eviter les pavés de textes
+                                Intégrer uniquement les informations essentielles pour ne pas noyer l’information principale
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Seven Psychopaths</h2>
+                            <p class="item-intro text-muted"></p>
+
+                            <p style="color: #c7254e">3.CONTROLE DES UTILISATEURS SUR LEURS ACTIONS:</p>
+                             <p>   LAISSER L’UTILISATEUR CONTROLER LE DEROULEMENT (INTERRUPTION, REPRISE) DE SES ACTIONS ET L’EN AVERTIR SI CE N’EST PAS LE CAS </p>
+
+                            </p>
+
+                            <p><b>3.1 Actions explicites</b>
+                                Rendre explicite la relation entre le fonctionnement de l’interface et les actions des utilisateurs
+
+                                Quelques exemples :
+
+                                Bouton valider à la fin d’une action
+                                Bouton explicite en fonction de leur action : « Rechercher » pour une recherche, « Envoyer » pour un envoi d’email
+                                Pas de cliquer-ici</p>
+                              <p> <b>3.2 Contrôle utilisateur </b>
+
+                                Quelques exemples :
+
+                                Permettre à l’utilisateur d’interrompre à tout moment une tâche en cours,
+                                Faciliter les retours en arrière autre que le retour arrière du navigateur (bouton back, fil d’Ariane)
+                                Limiter tant que possible les renvois vers d’autres sites à partir d’éléments de navigation principaux.
+                                Indiquer clairement à l’utilisateur les sorties de site et les redirections
+                                Prévoir une option permettant le retour aux paramètres par défaut,
+                                Permettre le désabonnement facilement
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>ADAPTABILITE DE L’APPLICATION AUX BESOINS DES UTILISATEURS</h2>
+                            <p class="item-intro text-muted"></p>
+
+                            <p style="color: #c7254e">4. ADAPTABILITE DE L’APPLICATION AUX BESOINS DES UTILISATEURS</p>
+                            <p>LAISSER L’UTILISATEUR PERSONNALISER ET CONTROLER UNE INTERFACE EN FONCTION DE SES BESOINS (NOTIFICATIONS, TABLEAUX DE BORDS, COULEURS  …)
+                            </p>
+
+
+                               <p><b> 4.1 Fléxibilite</b>
+                                <p>Mettre à disposition des éléments de personnalisation de l’interface pour les actions fréquemment utilisées
+
+
+                                Quelques exemples :
+
+                                Permettre aux utilisateurs de désactiver les affichages et informations inutiles
+                                Donner des options de filtres et tri (liste produit ou messagerie par exemple)
+
+                                </p>
+                                <p><b>4.2 Prise en compte de l’expérience utilisateur</b></p>
+                                <p>Respecter le degrés d’expérience utilisateur
+
+                                Quelques exemples :
+
+                                Donner des espaces privés et personnalisés aux utilisateurs expérimentés
+                                Tutorial pour une première utilisateur de l’interface (et uniquement pour la première, ou du moins pouvoir désactiver l’aide)</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>GESTION DES ERREURS</h2>
+                            <p class="item-intro text-muted"></p>
+
+                            <p style="color: #c7254e">5. GESTION DES ERREURS </p>
+                            <p>EVITER, REDUIRE ET CORRIGER LES ERREURS LORSQU’ELLES SURVIENNENT</p>
+
+
+
+                                <p><b>5.1. Protection contre les Erreurs</b>
+                                Détecter et prévenir les erreurs ou actions impossibles
+
+                                Quelques exemples :
+
+                                Les champs obligatoires se distinguent des champs facultatifs,
+                                Aide à la saisie directement affichée en indiquant le format de saisie souhaité
+                                Bouton de validation inactif tant que le formulaire n’est pas entièrement rempli</p>
+                                <p><b>5.2. Qualité des Messages d’Erreurs</b>
+                                Assurer la bonne compréhension et la nature de l’erreur
+
+                                Quelques exemples :
+
+                                Afficher les messages d’erreur les plus concis possible (simples et compréhensibles)
+                                Intégrer des exemples de solution « Votre adresse email doit inclure le signe @ »
+                                Indiquer la cause de l’erreur (identifiant déjà pris, email invalide) </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+
+                            <h2>HOMOGENEITE ET COHERENCE DES CODES</h2>
+                            <p class="item-intro text-muted"></p>
+
+                            <p style="color: #c7254e">6. HOMOGENEITE ET COHERENCE DES CODES</p>
+                               <p> CONSERVER LES CHOIX DE CONCEPTION ET CODES GRAPHIQUES POUR DES ELEMENTS ET ACTIONS SIMILAIRES POUR
+                                   FAVORISER L’APPRENTISSAGE</p>
+                            <p>Quelques exemples :
+
+                                La charte graphique est homogène sur tout le site
+                                Des systèmes de navigation identiques sur chaque page
+                                Les boutons d’actions aux fonctions similaire sont harmoniser graphiquement
+                                Toujours utiliser les mêmes formats pour les titres de niveaux 1, 2 …, pour les tableaux, les légendes etc.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        <!-- Project Details Go Here -->
+                                        <h2>SIGNIFIANCE DES CODES ET DENOMINATIONS
+                                        </h2>
+                                        <p class="item-intro text-muted"></p>
+                                        <!--   <img class="img-responsive img-centered" src=" alt="">-->
+                                        <p style="color: #c7254e"><b>7. SIGNIFIANCE DES CODES ET DENOMINATIONS</b></p>
+                                        <p>    CHOISIR DE MANIERE APPROPRIEE LES MOTS ET LES SYMBOLES UTILISES SUR UN SITE OU UNE APPLICATION.</p>
+                                        <p>Quelques exemples :
+
+                                            Les titre de liens sont facilement compréhensible et correspondent au contenu
+                                            Utiliser des icônes pour les éléments fréquemment employés
+                                            Vérifier la compréhension des icônes (privilégier texte + icone)</p>
+
+                                        <ul class="list-inline">
+                                            <li></li>
+                                        </ul>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Les heuristiques de Nielson et leurs explications
+                            </h2>
+                            <p class="item-intro text-muted"></p>
+                            <!--   <img class="img-responsive img-centered" src=" alt="">-->
+                            <p style="color: #c7254e"><b>Les heuristiques de Nielson et leurs explications</b></p>
+                            <p><b>1.	Visibilité de statut du système</b></p>
+                                Le système devrait maintenir l’utilisateur toujours informé sur sa localisation à travers des marquages appropriées dans un temps raisonnable. Dans ce principe, deux chose sont plus importantes : Les utilisateurs doivent savoir où est-ce qu’ils sont et où est-ce qu’ils doivent aller.</p>
+                            <p><b>    2.	Correspondance entre le système et le monde réel</b></p>
+                                Le système devrait " parler " la langue des utilisateurs de telle façon que les informations apparaissent dans un ordre naturel et logique, en se conformant aux mots, expressions et conventions usuels.</p>
+                            <p><b>    3.	Contrôle de l’utilisateur et liberté</b></p>
+                                Le système devrait être très " obéissant " aux actions de l’utilisateur et offrir des " sorties de secours " clairement marquées pour les opérations exécutées mais non désirées, ainsi que des options de faire/défaire les opérations dans le dialogue. Il faut aussi permettre à l’utilisateur de personnaliser sa zone de travail comme la couleur, la police de caractères, la largeur de l’écran, la version du navigateur, etc.</p>
+                            <p><b>    4.	Consistance et étalon (normalisation)</b></p>
+                                Suivre les conventions de plate-forme est la façon la plus sûr de respecter ce principe. Les utilisateurs ne doivent pas se demander si les différents mots, situations ou actions veulent dire la même chose. Les titres et entêtes doivent être représentatifs du contenu.</p>
+                            <p><b>   5.	Prévention contre les erreurs</b></p>
+                                Le système devrait prévoir les erreurs que l’utilisateur peut commettre. Il doit offrir de bons messages d’erreurs et instructions compréhensibles pour les corriger afin d’éviter que des problèmes surviennent.</p>
+
+
+                            <p><b>    6.	Reconnaissance plutôt que rappel</b></p>
+                                Le système devrait rendre les objets, les actions et les options visibles. L’utilisateur ne doit pas se rappeler des informations d’une partie du dialogue à l’autre. Les directives pour l’usage du système doivent être visible ou facilement récupérables à chaque fois que c’est nécessaire pendant le dialogue (boutons, cartes de navigation, bonnes étiquettes et liens descriptifs, par exemple).</p>
+                            <p><b>    7.	Flexibilité et efficience d’utilisation</b></p>
+                                Le système devrait offrir des raccourcis pour les utilisateurs expérimentés. Mettre des accélérateurs permettant aux utilisateurs de faire et/ou récupérer les actions plus fréquemment utilisées.</p>
+                            <p><b>    8.	" Design " esthétique et minimaliste</b></p>
+                                Les dialogues devraient contenir seulement les informations pertinentes et principales qui devraient être bien visible. Les informations non pertinentes ou rarement utilisées doivent être placées dans les niveaux les plus bas ou les plus détaillés dans la hiérarchie de distribution du contenu. Chaque unité d’information supplémentaire dans un dialogue rivalise avec les unités pertinentes et diminue leur visibilité relative.</p>
+                            <p><b>   9.	Fonctions de l’aide (reconnaissance, diagnostic et récupération d’erreurs)</b></p>
+                                Les messages d’erreurs devraient être exprimés dans la langue ordinaire, sans code en indiquant précisément le problème de manière constructive, claire et compressible et de minière à offrir une solution aux problèmes ou en tout cas comment les résoudre.</p>
+                            <p><b>    10.	Aide et documentation</b></p>
+                                Le système devrait fournir des aides et de la documentation. Toutes les informations devraient être faciles à chercher et être concentrées sur la tâche (par exemple, tutoriels, spécifications, agents intelligents, etc.)</p>
+                            </p>
+
+                            <ul class="list-inline">
+                                <li></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- jQuery -->
+<script src="{{ asset('bundles/gestionfilms/vendor/jquery/jquery.min.js')}}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ asset('bundles/gestionfilms/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="{{ asset('bundles/gestionfilms/js/jqBootstrapValidation.js')}}"></script>
+<script src="{{ asset('bundles/gestionfilms/js/contact_me.js')}}"></script>
+
+<!-- Theme JavaScript -->
+<script src="{{ asset('bundles/gestionfilms/js/agency.min.js')}}"></script>
+
+</body>
+
+</html>
